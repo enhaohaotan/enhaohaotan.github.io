@@ -26,29 +26,31 @@ author1:
   # Comment/uncommet to show/hide
   # Rearrange to change the order in which they appear
   social:
-    twitter:         enhaohaotan
+    instagram:       enhaohaotan
     github:          enhaohaotan
     email:           enhaohao.tan@gmail.com
-    # rss:             https://<url>/feed.xml
+    linkedin:        enhao-tan
     facebook:        100095359869609
+    twitter:         enhaohaotan
+    # rss:             https://<url>/feed.xml
     # google:          <number>
     # vk:              <username>
-    # youtube:         <string_string_string>
+    youtube:         UC5OfK5-nwHzaexFHjrdG6-A
     # vimeo:           <username>
     # vine:            <username>
-    # spotify:         <user>/<number>
+    spotify:         user/31nugeowqq3fqiqlyw3krktqp3xe
     # soundcloud:      <username>
     # lastfm:          <username>
-    instagram:       enhaohaotan
+  
     # flickr:          <string@string>
     # 500px:           <username>
     # dribbble:        <username>
     # behance:         <username>
     # deviantart:      <username>
     # ello:            <username>
-    # twitch:          <username>
-    # steam:           <number>
-    # reddit:          <username>
+    twitch:          haohao_tan
+    steam:           76561199045729559
+    reddit:          Haohao-Tan
     # tumblr:          <username>
     # pinterest:       <username>
     # foursquare:      <number>
@@ -57,12 +59,11 @@ author1:
     # npm:             <username>
     # hackernews:      <username>
     # trello:          <firstnamelastname>
-    # linkedin:        <firstname-lastname-string>
     # xing:            <firstname_lastname_counter>
     # blogger:         <number>
     # delicious:       <username>
     # stumbleupon:     <username>
-    # paypal:          <username>
+    paypal:          EnhaoTan
     # download:        <url>
     # keybase          <username>
 
