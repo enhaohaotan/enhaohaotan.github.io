@@ -1,44 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<html class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="mediaqueries.css">
-</head>
-<body>
-    <nav id="desktop-nav">
-        <div class="logo">Enhao Tan</div>
-        <div>
-            <ul class="nav-links">
-                <li><a href="#about">About</a> </li>
-                <li><a href="#experience">Experience</a> </li>
-                <li><a href="#projects">Projects</a> </li>
-                <li><a href="#contact">Contact</a> </li>
-            </ul>
+    <link href="./output.css" rel="stylesheet" />
+  </head>
+  <body class="bg-amber-300">
+    <nav class="flex justify-between items-center bg-black rounded-b-3xl h-20 px-20">
+      <div class="rounded-full h-12 w-12 bg-white relative left-1 top-1">
+        <div class="rounded-full h-12 w-12 bg-amber-300 relative right-1 bottom-1 flex justify-center items-center border border-black">
+            <p class="text-zinc-900 text-2xl font-semibold">浩</p>
         </div>
+      </div>
+      
+      <ul class="flex gap-10 text-white text-2xl font-medium ">
+        <li><a href="#about" class="hover:underline underline-offset-8">About</a></li>
+        <li><a href="#experience" class="hover:underline underline-offset-8">Experience</a></li>
+        <li><a href="#projects" class="hover:underline underline-offset-8">Projects</a></li>
+        <li><a href="#contact" class="hover:underline underline-offset-8">Contact</a></li>
+      </ul>
     </nav>
-    <nav id="hamburger-nav">
-        <div class="logo">Enhao Tan</div>
-        <div class="hamburger-menu">
-            <div class="hamburger-icon" onclick="toggleMenu()">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
-            <div class="menu-links">
-                <ul>
-                    <li><a href="#about" onclick="toggleMenu()">About</a> </li>
-                    <li><a href="#experience" onclick="toggleMenu()">Experience</a> </li>
-                    <li><a href="#projects" onclick="toggleMenu()">Projects</a> </li>
-                    <li><a href="#contact" onclick="toggleMenu()">Contact</a> </li>
-                </ul>
-
-            </div>
-        </div>
-    </nav>
-    <section id="profile">
+    <!-- <section id="profile">
         <div class="section__pic-container">
             <img src="./assets/profile-pic.png" alt="Enhao Tan profile picture" />
         </div>
@@ -242,8 +225,8 @@
                 <p><a href="https://www.linkedin.com/in/enhao-tan/">LinkedIn</a></p>
             </div>
         </div>
-    </section>
-    <footer>
+    </section> -->
+    <!-- <footer>
         <nav>
             <div class="nav-links-container">
                 <ul class="nav-links">
@@ -255,7 +238,7 @@
             </div>
         </nav>
         <p>Copyright &#169; 2024 Enhao Tan. All Rights Reserved.</p>
-    </footer>
+    </footer> -->
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
