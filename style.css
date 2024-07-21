@@ -2,12 +2,55 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
-
-* {
-  box-sizing: content-box;
+html {
+  font-size: 1.8vmin;
 }
+
 body {
   font-family: "Montserrat", sans-serif;
   font-optical-sizing: auto;
+  font-size: 10vmin;
+}
+
+.avatar {
+  width: 36vmin;
+  height: 48vmin;
+}
+
+.avatar-about {
+  width: 30vmin;
+  height: 40vmin;
+}
+
+.service {
+  width: 32vmin;
+  height: 40vmin;
+}
+
+.project {
+  width: 40vmin;
+  height: 32vmin;
+}
+
+.download-cv {
+  height: 4.5vmin;
+  width: 18vmin;
+}
+
+.contact-me {
+  height: 4.5vmin;
+  width: 16vmin;
+}
+
+.view-services, .view-projects {
+  height: 4.5vmin;
+  width: 20vmin;
+}
+
+.about {
+  width: 90vmin;
+}
+
+.service-text {
+  width: 90vmin;
 }

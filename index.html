@@ -5,240 +5,378 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My Portfolio</title>
     <link href="./output.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body class="bg-amber-300">
-    <nav class="flex justify-between items-center bg-black rounded-b-3xl h-20 px-20">
-      <div class="rounded-full h-12 w-12 bg-white relative left-1 top-1">
-        <div class="rounded-full h-12 w-12 bg-amber-300 relative right-1 bottom-1 flex justify-center items-center border border-black">
-            <p class="text-zinc-900 text-2xl font-semibold">浩</p>
+    <nav
+      class="flex justify-between items-center top-0 bg-black rounded-b-3xl h-16 pr-16 pl-12 gap-16"
+    >
+      <div class="rounded-full h-10 w-10 bg-white relative">
+        <div
+          class="rounded-full h-10 w-10 bg-amber-300 relative right-1 bottom-1 flex justify-center items-center box-content border border-black"
+        >
+          <p class="text-zinc-900 text-xl font-bold">浩</p>
+        </div>
+      </div>
+
+      <ul class="flex gap-10 text-white text-2xl font-medium">
+        <li>
+          <a href="#about" class="hover:underline underline-offset-8">About</a>
+        </li>
+        <li>
+          <a href="#services" class="hover:underline underline-offset-8"
+            >Services</a
+          >
+        </li>
+        <li>
+          <a href="#projects" class="hover:underline underline-offset-8"
+            >Projects</a
+          >
+        </li>
+        <li>
+          <a href="#contact" class="hover:underline underline-offset-8"
+            >Contact</a
+          >
+        </li>
+      </ul>
+    </nav>
+
+    <section id="profile" class="flex justify-center my-12">
+      <div class="flex flex-col justify-center gap-2 ml-4 mr-16">
+        <h1 class="text-zinc-900 text-5xl font-extrabold">Hej,</h1>
+        <h1 class="text-zinc-900 text-5xl font-extrabold">I'm Enhao</h1>
+        <p class="text-zinc-500 text-base font-semibold">
+          Web Developer & Game Designer
+        </p>
+        <div class="flex gap-4 mt-3">
+          <div
+            class="download-cv flex justify-center rounded-lg bg-emerald-400 relative left-1 top-1"
+          >
+            <button
+              class="btn h-full w-full rounded-lg bg-black relative right-1 bottom-1 text-xl text-white font-bold border border-black hover:bg-white hover:text-black transition ease-in-out duration-300"
+            >
+              Download CV
+            </button>
+          </div>
+          <div
+            class="contact-me flex justify-center rounded-lg bg-emerald-400 relative left-1 top-1"
+          >
+            <button
+              class="btn h-full w-full rounded-lg bg-black relative right-1 bottom-1 text-xl text-white font-bold border border-black hover:bg-white hover:text-black transition ease-in-out duration-300"
+            >
+              Contact me
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="avatar rounded-lg bg-black relative left-2 top-2 ml-12">
+        <div
+          class="rounded-lg h-full w-full bg-emerald-400 border-2 border-black relative right-2 bottom-2 hover:-translate-x-2 hover:-translate-y-2 transition ease-in-out duration-300"
+        ></div>
+      </div>
+    </section>
+
+    <section id="about" class="flex justify-center my-32">
+      <div class="about flex gap-8 bg-blue-600 w-full rounded-xl p-10">
+        <div class="flex-none avatar-about rounded-lg bg-black my-6">
+          <div
+            class="rounded-lg h-full w-full bg-emerald-400 border-2 border-black relative hover:-translate-x-2 hover:-translate-y-2 transition ease-in-out duration-300"
+          ></div>
+        </div>
+        <div class="flex flex-col justify-end mb-8">
+          <h1 class="text-5xl text-white font-extrabold">About me</h1>
+          <h2 class="text-lg text-amber-300 font-bold">
+            M.Sc. in Computer Science, KU
+          </h2>
+          <p class="text-base text-white font-semibold mt-2">
+            Hello! I'm a full stack web developer and a game designer. I speak
+            Mandarin, English and Danish. I love to build enjoyable and
+            entertaining things for others. I play guitar and piano. I like to
+            work out and play video games. Dive into my portfolio to discover a
+            fusion of elegant design and development!
+          </p>
+          <div class="flex gap-8 mt-8">
+            <div
+              class="view-services flex justify-center rounded-lg bg-emerald-400 relative left-1 top-1"
+            >
+              <button
+                class="btn h-full w-full rounded-lg bg-black relative right-1 bottom-1 text-lg text-white font-bold border border-black hover:bg-white hover:text-black transition ease-in-out duration-300"
+              >
+                View my services
+              </button>
+            </div>
+            <div
+              class="view-projects flex justify-center rounded-lg bg-emerald-400 relative left-1 top-1"
+            >
+              <button
+                class="btn h-full w-full rounded-lg bg-black relative right-1 bottom-1 text-lg text-white font-bold border border-black hover:bg-white hover:text-black transition ease-in-out duration-300"
+              >
+                View my projects
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="services" class="flex my-16">
+      <div class="flex justify-center bg-orange-500 w-screen">
+        <div class="flex flex-col justify-center items-center mx-20 my-12">
+          <h1 class="text-5xl text-black font-extrabold">Services</h1>
+          <p
+            class="service-text text-base text-white font-semibold text-center my-4"
+          >
+            Embark on a journey of digital transformation with services that
+            blend design brilliance with cutting-edge development. Let's create
+            experiences that resonate and applications that captivate.
+          </p>
+          <div class="flex gap-20 mt-10">
+            <div
+              class="service flex-none rounded-xl bg-black my-6 top-1 left-1"
+            >
+              <div
+                class="rounded-xl h-full w-full bg-purple-500 border-2 border-black relative right-1 bottom-1 hover:-translate-x-1 hover:-translate-y-1 transition ease-in-out duration-300 flex flex-col justify-start items-center"
+              >
+                <div
+                  class="bg-emerald-400 h-24 w-24 rounded-full flex justify-center items-center relative bottom-12"
+                >
+                  <p class="text-white text-6xl font-extrabold">1</p>
+                </div>
+                <p class="text-white text-3xl font-bold relative bottom-8">
+                  Web Developer
+                </p>
+              </div>
+            </div>
+            <div
+              class="service flex-none rounded-xl bg-black my-6 top-1 left-1"
+            >
+              <div
+                class="rounded-xl h-full w-full bg-purple-500 border-2 border-black relative right-1 bottom-1 hover:-translate-x-1 hover:-translate-y-1 transition ease-in-out duration-300 flex flex-col justify-start items-center"
+              >
+                <div
+                  class="bg-emerald-400 h-24 w-24 rounded-full flex justify-center items-center relative bottom-12"
+                >
+                  <p class="text-white text-6xl font-extrabold">2</p>
+                </div>
+                <p class="text-white text-3xl font-bold relative bottom-8">
+                  Game Designer
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="projects" class="flex my-16 justify-center">
+      <div class="flex flex-col justify-center items-center my-12">
+        <div class="bg-emerald-400 w-screen py-6 flex justify-center">
+          <h1 class="text-5xl text-white font-extrabold">Projects</h1>
+        </div>
+
+        <div class="flex gap-10 mt-10">
+          <div class="project flex-none rounded-lg bg-black my-6 top-2 left-20">
+            <div
+              class="rounded-lg h-full w-full bg-emerald-400 border-2 border-black relative right-2 bottom-2 hover:-translate-x-1 hover:-translate-y-1 transition ease-in-out duration-300 flex flex-col justify-start items-center"
+            ></div>
+          </div>
+          <div class="project flex-none rounded-lg bg-black my-6 top-2 left-2">
+            <div
+              class="rounded-lg h-full w-full bg-emerald-400 border-2 border-black relative right-2 bottom-2 hover:-translate-x-1 hover:-translate-y-1 transition ease-in-out duration-300 flex flex-col justify-start items-center"
+            ></div>
+          </div>
+        </div>
+
+        <div class="flex gap-10">
+          <div class="project flex-none rounded-lg bg-black my-6 top-2 left-20">
+            <div
+              class="rounded-lg h-full w-full bg-emerald-400 border-2 border-black relative right-2 bottom-2 hover:-translate-x-1 hover:-translate-y-1 transition ease-in-out duration-300 flex flex-col justify-start items-center"
+            ></div>
+          </div>
+          <div class="project flex-none rounded-lg bg-black my-6 top-2 left-2">
+            <div
+              class="rounded-lg h-full w-full bg-emerald-400 border-2 border-black relative right-2 bottom-2 hover:-translate-x-1 hover:-translate-y-1 transition ease-in-out duration-300 flex flex-col justify-start items-center"
+            ></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      id="contact"
+      class="flex flex-col justify-center items-center gap-4 my-16"
+    >
+      <h1 class="text-5xl text-black font-extrabold mb-12">Contact</h1>
+
+      <div class="flex gap-4 justify-center">
+        <div
+          class="icons flex justify-center h-20 w-20 rounded-lg bg-emerald-400 relative left-1 top-1"
+        >
+          <div
+            class="bg-black h-full w-full rounded-lg flex justify-center items-center relative right-1 bottom-1 hover:bg-white hover:text-black text-white transition ease-in-out duration-300 border border-black"
+          >
+            <i class="fa-brands fa-google fa-2xs"></i>
+          </div>
+        </div>
+        <div
+          class="icons flex justify-center h-20 w-20 rounded-lg bg-emerald-400 relative left-1 top-1"
+        >
+          <div
+            class="bg-black h-full w-full rounded-lg flex justify-center items-center relative right-1 bottom-1 hover:bg-white hover:text-black text-white transition ease-in-out duration-300 border border-black"
+          >
+            <i class="fa-brands fa-youtube fa-2xs"></i>
+          </div>
+        </div>
+        <div
+          class="icons flex justify-center h-20 w-20 rounded-lg bg-emerald-400 relative left-1 top-1"
+        >
+          <div
+            class="bg-black h-full w-full rounded-lg flex justify-center items-center relative right-1 bottom-1 hover:bg-white hover:text-black text-white transition ease-in-out duration-300 border border-black"
+          >
+            <i class="fa-brands fa-x-twitter fa-2xs"></i>
+          </div>
+        </div>
+        <div
+          class="icons flex justify-center h-20 w-20 rounded-lg bg-emerald-400 relative left-1 top-1"
+        >
+          <div
+            class="bg-black h-full w-full rounded-lg flex justify-center items-center relative right-1 bottom-1 hover:bg-white hover:text-black text-white transition ease-in-out duration-300 border border-black"
+          >
+            <i class="fa-brands fa-facebook fa-2xs"></i>
+          </div>
+        </div>
+        <div
+          class="icons flex justify-center h-20 w-20 rounded-lg bg-emerald-400 relative left-1 top-1"
+        >
+          <div
+            class="bg-black h-full w-full rounded-lg flex justify-center items-center relative right-1 bottom-1 hover:bg-white hover:text-black text-white transition ease-in-out duration-300 border border-black"
+          >
+            <i class="fa-brands fa-instagram fa-2xs"></i>
+          </div>
+        </div>
+        <div
+          class="icons flex justify-center h-20 w-20 rounded-lg bg-emerald-400 relative left-1 top-1"
+        >
+          <div
+            class="bg-black h-full w-full rounded-lg flex justify-center items-center relative right-1 bottom-1 hover:bg-white hover:text-black text-white transition ease-in-out duration-300 border border-black"
+          >
+            <i class="fa-brands fa-tiktok fa-2xs"></i>
+          </div>
+        </div>
+        <div
+          class="icons flex justify-center h-20 w-20 rounded-lg bg-emerald-400 relative left-1 top-1"
+        >
+          <div
+            class="bg-black h-full w-full rounded-lg flex justify-center items-center relative right-1 bottom-1 hover:bg-white hover:text-black text-white transition ease-in-out duration-300 border border-black"
+          >
+            <i class="fa-brands fa-discord fa-2xs"></i>
+          </div>
+        </div>
+      </div>
+      <div class="flex gap-4 justify-center">
+        <div
+          class="icons flex justify-center h-20 w-20 rounded-lg bg-emerald-400 relative left-1 top-1"
+        >
+          <div
+            class="bg-black h-full w-full rounded-lg flex justify-center items-center relative right-1 bottom-1 hover:bg-white hover:text-black text-white transition ease-in-out duration-300 border border-black"
+          >
+            <i class="fa-brands fa-weixin fa-2xs"></i>
+          </div>
+        </div>
+        <div
+          class="icons flex justify-center h-20 w-20 rounded-lg bg-emerald-400 relative left-1 top-1"
+        >
+          <div
+            class="bg-black h-full w-full rounded-lg flex justify-center items-center relative right-1 bottom-1 hover:bg-white hover:text-black text-white transition ease-in-out duration-300 border border-black"
+          >
+            <i class="fa-brands fa-github fa-2xs"></i>
+          </div>
+        </div>
+        <div
+          class="icons flex justify-center h-20 w-20 rounded-lg bg-emerald-400 relative left-1 top-1"
+        >
+          <div
+            class="bg-black h-full w-full rounded-lg flex justify-center items-center relative right-1 bottom-1 hover:bg-white hover:text-black text-white transition ease-in-out duration-300 border border-black"
+          >
+            <i class="fa-brands fa-spotify fa-2xs"></i>
+          </div>
+        </div>
+        <div
+          class="icons flex justify-center h-20 w-20 rounded-lg bg-emerald-400 relative left-1 top-1"
+        >
+          <div
+            class="bg-black h-full w-full rounded-lg flex justify-center items-center relative right-1 bottom-1 hover:bg-white hover:text-black text-white transition ease-in-out duration-300 border border-black"
+          >
+            <i class="fa-brands fa-facebook-messenger fa-2xs"></i>
+          </div>
+        </div>
+        <div
+          class="icons flex justify-center h-20 w-20 rounded-lg bg-emerald-400 relative left-1 top-1"
+        >
+          <div
+            class="bg-black h-full w-full rounded-lg flex justify-center items-center relative right-1 bottom-1 hover:bg-white hover:text-black text-white transition ease-in-out duration-300 border border-black"
+          >
+            <i class="fa-brands fa-steam fa-2xs"></i>
+          </div>
+        </div>
+        <div
+          class="icons flex justify-center h-20 w-20 rounded-lg bg-emerald-400 relative left-1 top-1"
+        >
+          <div
+            class="bg-black h-full w-full rounded-lg flex justify-center items-center relative right-1 bottom-1 hover:bg-white hover:text-black text-white transition ease-in-out duration-300 border border-black"
+          >
+            <i class="fa-brands fa-playstation fa-2xs"></i>
+          </div>
+        </div>
+        <div
+          class="icons flex justify-center h-20 w-20 rounded-lg bg-emerald-400 relative left-1 top-1"
+        >
+          <div
+            class="bg-black h-full w-full rounded-lg flex justify-center items-center relative right-1 bottom-1 hover:bg-white hover:text-black text-white transition ease-in-out duration-300 border border-black"
+          >
+            <i class="fa-brands fa-whatsapp fa-2xs"></i>
+          </div>
         </div>
       </div>
       
-      <ul class="flex gap-10 text-white text-2xl font-medium ">
-        <li><a href="#about" class="hover:underline underline-offset-8">About</a></li>
-        <li><a href="#experience" class="hover:underline underline-offset-8">Experience</a></li>
-        <li><a href="#projects" class="hover:underline underline-offset-8">Projects</a></li>
-        <li><a href="#contact" class="hover:underline underline-offset-8">Contact</a></li>
-      </ul>
-    </nav>
-    <!-- <section id="profile">
-        <div class="section__pic-container">
-            <img src="./assets/profile-pic.png" alt="Enhao Tan profile picture" />
+      <div class="flex flex-col justify-center items-center mt-16 mb-6 gap-2">
+        <h3 class="text-2xl text-black font-bold">
+          On my profile card, I am a CS student.
+        </h3>
+        <h3 class="text-2xl text-black font-bold">
+          In my mind, I am a programmer.
+        </h3>
+        <h3 class="text-2xl text-black font-bold">
+          But in my heart, I am a gamer.
+        </h3>
+      </div>
+      <div class="flex justify-center items-center gap-6">
+        <div
+          class="rounded-full h-14 w-14 bg-white relative box-content border border-black"
+        >
+          <div
+            class="rounded-full h-14 w-14 bg-amber-300 relative right-1 bottom-1 flex justify-center items-center box-content border border-black"
+          >
+            <p class="text-zinc-900 text-3xl font-bold">浩</p>
+          </div>
         </div>
-        <div class="section__text">
-            <p class="section__text__p1">Hello, I'm</p>
-            <h1 class="title">Enhao Tan</h1>
-            <p class="section__text__p2">Game Designer</p>
-            <div class="btn-container">
-                <button class="btn btn-color-2" onclick="window.open('./assets/resume-example.pdf')">
-                    Download CV
-                </button>
-                <button class="btn btn-color-1" onclick="location.href='./#contact'">
-                    Contact Info
-                </button>
-            </div>
-            <div id="socials-container">
-                <img src="./assets/linkedin.png" alt="My LinkedIn profile" class="icon" onclick="location.href='https://www.linkedin.com/in/enhao-tan/'">
-                <img src="./assets/github.png" alt="My Github profile" class="icon" onclick="location.href='https://github.com/enhaohaotan/'">
-            </div>
-        </div>
+        <h2 class="text-3xl text-black font-extrabold">Enhao Tan 谭恩浩</h2>
+      </div>
     </section>
-    <section id="about">
-        <p class="section__text__p1">Get To Know More</p>
-        <h1 class="title">About Me</h1>
-        <div class="section-container">
-            <div class="section__pic-container">
-                <img src="./assets/about-pic.png" alt="Profile picture" class="about-pic">
-            </div>
-            <div class="about-details-container">
-                <div class="about-containers">
-                    <div class="details-container">
-                        <img src="./assets/experience.png" alt="Experience icon" class="icon">
-                        <h3>Experience</h3>
-                        <p>2+ years <br>Game Designing</p>
-                    </div>
-                    <div class="details-container">
-                        <img src="./assets/education.png" alt="Education icon" class="icon">
-                        <h3>Education</h3>
-                        <p>B.Eng. Intelligence Science <br>M.Sc. Computer Science</p>
-                    </div>
-                </div>
-                <div class="text-container">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas eget nulla consectetur, euismod magna sed, facilisis urna. Proin at neque elementum, euismod mauris id, lacinia elit. Donec dapibus, nulla non fermentum pellentesque, quam leo pharetra dui, in laoreet arcu nisi nec lorem. Duis eget porta urna. Curabitur posuere ipsum eget metus semper vestibulum. Donec finibus ipsum non lectus tincidunt pharetra. Morbi egestas tempor mauris bibendum dictum.</p>
-                </div>
-            </div>
-        </div>
-        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'">
-    </section>
-    <section id="experience">
-        <p class="section__text__p1">Explore My</p>
-        <h1 class="title">Experience</h1>
-        <div class="experience-details-container">
-            <div class="about-containers">
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Frontend Development</h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
-                            <div>
-                                <h3>HTML</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
-                            <div>
-                                <h3>CSS</h3>
-                                <p>Experienced</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
-                            <div>
-                                <h3>SASS</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
-                            <div>
-                                <h3>JavaScript</h3>
-                                <p>Basic</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
-                            <div>
-                                <h3>TypeScript</h3>
-                                <p>Basic</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
-                            <div>
-                                <h3>Material UI</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                    </div>
-
-                </div>
-                <div class="details-container">
-                    <h2 class="experience-sub-title">Frontend Development</h2>
-                    <div class="article-container">
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
-                            <div>
-                                <h3>PostgreSQL</h3>
-                                <p>Basic</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
-                            <div>
-                                <h3>Node JS</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
-                            <div>
-                                <h3>Express JS</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                        <article>
-                            <img src="./assets/checkmark.png" alt="experience icon" class="icon">
-                            <div>
-                                <h3>Git</h3>
-                                <p>Intermediate</p>
-                            </div>
-                        </article>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'">
-    </section>
-    <section id="projects">
-        <p class="section__text__p1">Browse My Recent</p>
-        <h1 class="title">Projects</h1>
-        <div class="experience-details-container">
-            <div class="about-containers">
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img src="./assets/project-1.png" alt="Project 1" class="project-img">
-                    </div>
-                    <h2 class="experience-sub-title project-title">Project One</h2>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
-                            Github
-                        </button>
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
-                            Live Demo
-                        </button>
-                    </div>
-                </div>
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img src="./assets/project-2.png" alt="Project 2" class="project-img">
-                    </div>
-                    <h2 class="experience-sub-title project-title">Project Two</h2>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
-                            Github
-                        </button>
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
-                            Live Demo
-                        </button>
-                    </div>
-                </div>
-                <div class="details-container color-container">
-                    <div class="article-container">
-                        <img src="./assets/project-3.png" alt="Project 3" class="project-img">
-                    </div>
-                    <h2 class="experience-sub-title project-title">Project Three</h2>
-                    <div class="btn-container">
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
-                            Github
-                        </button>
-                        <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/'">
-                            Live Demo
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'">
-    </section>
-    <section id="contact">
-        <p class="section__text__p1">Get in Touch</p>
-        <h1 class="title">Contact Me</h1>
-        <div class="contact-info-upper-container">
-            <div class="contact-info-container">
-                <img src="./assets/email.png" alt="Email icon" class="icon contact-icon">
-                <p><a href="mailto:enhaohao.tan@gmail.com">enhaohao.tan@gmail.com</a></p>
-            </div>
-            <div class="contact-info-container">
-                <img src="./assets/linkedin.png" alt="LinkedIn icon" class="icon contact-icon">
-                <p><a href="https://www.linkedin.com/in/enhao-tan/">LinkedIn</a></p>
-            </div>
-        </div>
-    </section> -->
-    <!-- <footer>
-        <nav>
-            <div class="nav-links-container">
-                <ul class="nav-links">
-                    <li><a href="#about">About</a> </li>
-                    <li><a href="#experience">Experience</a> </li>
-                    <li><a href="#projects">Projects</a> </li>
-                    <li><a href="#contact">Contact</a> </li>
-                </ul>
-            </div>
-        </nav>
-        <p>Copyright &#169; 2024 Enhao Tan. All Rights Reserved.</p>
-    </footer> -->
+    <footer class="flex justify-center items-center my-16">
+      <p class="text-sm font-medium">
+        Copyright &#169; 2024 Enhao Tan. All Rights Reserved.
+      </p>
+    </footer>
     <script src="script.js"></script>
+    <script
+      src="https://kit.fontawesome.com/679762cebc.js"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
