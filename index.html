@@ -18,7 +18,8 @@
     >
       <div class="rounded-full h-10 w-10 bg-white relative">
         <div
-          class="rounded-full h-10 w-10 bg-amber-300 relative right-1 bottom-1 flex justify-center items-center box-content border border-black"
+          class="rounded-full h-10 w-10 bg-amber-300 relative right-1 bottom-1 flex justify-center items-center box-content border border-black hover:cursor-pointer"
+          onclick="location.href='#'"
         >
           <p class="text-zinc-900 text-xl font-bold">浩</p>
         </div>
@@ -59,6 +60,7 @@
           >
             <button
               class="h-full w-full rounded-lg bg-black relative right-1 bottom-1 text-xl text-white font-bold border border-black hover:bg-white hover:text-black transition ease-in-out duration-300"
+              onclick="window.open('./assets/CV.pdf')"
             >
               Download CV
             </button>
@@ -68,6 +70,7 @@
           >
             <button
               class="h-full w-full rounded-lg bg-black relative right-1 bottom-1 text-xl text-white font-bold border border-black hover:bg-white hover:text-black transition ease-in-out duration-300"
+              onclick="location.href='#contact'"
             >
               Contact me
             </button>
@@ -76,8 +79,10 @@
       </div>
       <div class="avatar rounded-lg bg-black relative left-2 top-2 ml-12">
         <div
-          class="rounded-lg h-full w-full bg-emerald-400 border-2 border-black relative right-2 bottom-2 hover:-translate-x-2 hover:-translate-y-2 transition ease-in-out duration-300"
-        ></div>
+          class="rounded-lg h-full w-full bg-emerald-400 border-2 border-black relative right-2 bottom-2 hover:-translate-x-2 hover:-translate-y-2 transition ease-in-out duration-300 flex justify-center items-center"
+        >
+          <img src="assets/avatar-orange.png" alt="avatar" class="avatar-img" />
+        </div>
       </div>
     </section>
 
@@ -86,7 +91,8 @@
         <div class="flex-none avatar-about rounded-lg bg-black my-6">
           <div
             class="rounded-lg h-full w-full bg-emerald-400 border-2 border-black relative hover:-translate-x-2 hover:-translate-y-2 transition ease-in-out duration-300"
-          ></div>
+          >
+        <img src="assets/about.png" alt="about" class="rounded-lg w-full h-full"></div>
         </div>
         <div class="flex flex-col justify-end mb-8">
           <h1 class="text-5xl text-white font-extrabold">About me</h1>
@@ -106,6 +112,7 @@
             >
               <button
                 class="h-full w-full rounded-lg bg-black relative right-1 bottom-1 text-lg text-white font-bold border border-black hover:bg-white hover:text-black transition ease-in-out duration-300"
+                onclick="location.href='#services'"
               >
                 View my services
               </button>
@@ -115,6 +122,7 @@
             >
               <button
                 class="h-full w-full rounded-lg bg-black relative right-1 bottom-1 text-lg text-white font-bold border border-black hover:bg-white hover:text-black transition ease-in-out duration-300"
+                onclick="location.href='#projects'"
               >
                 View my projects
               </button>
@@ -130,9 +138,9 @@
     >
       <h1 class="text-5xl text-black font-extrabold">Services</h1>
       <p class="text-base text-white font-semibold text-center my-4">
-        Embark on a journey of digital transformation with services that blend
-        design brilliance with cutting-edge development. Let's create
-        experiences that resonate and applications that captivate.
+        Embark on a journey of digital innovation with services that merge
+        exceptional design with state-of-the-art development. Together, let's
+        craft experiences that inspire and applications that engage.
       </p>
       <div class="flex gap-20 mt-8">
         <div class="service flex-none rounded-xl bg-black my-6 top-1 left-1">
@@ -144,9 +152,20 @@
             >
               <p class="text-white text-6xl font-extrabold">1</p>
             </div>
-            <p class="text-white text-3xl font-bold relative bottom-8">
+            <h2 class="text-white text-3xl font-bold relative bottom-8">
               Web Developer
-            </p>
+            </h2>
+            <ul
+              class="text-lg text-white font-semibold list-disc self-start px-12 -mt-2"
+            >
+              <li>Computer network</li>
+              <li>React Angular</li>
+              <li>Django Spring</li>
+              <li>GraphQL</li>
+              <li>Docker</li>
+              <li>MySQL MongoDB</li>
+              <li>Git</li>
+            </ul>
           </div>
         </div>
         <div class="service flex-none rounded-xl bg-black my-6 top-1 left-1">
@@ -158,9 +177,19 @@
             >
               <p class="text-white text-6xl font-extrabold">2</p>
             </div>
-            <p class="text-white text-3xl font-bold relative bottom-8">
+            <h2 class="text-white text-3xl font-bold relative bottom-8">
               Game Designer
-            </p>
+            </h2>
+            <ul
+              class="text-lg text-white font-semibold list-disc self-start px-12 -mt-2"
+            >
+              <li>Computer graphics</li>
+              <li>Unity & Unreal</li>
+              <li>C/C++ & C#</li>
+              <li>UI/UX design</li>
+              <li>Blender</li>
+              <li>Figma</li>
+            </ul>
           </div>
         </div>
       </div>
@@ -168,33 +197,67 @@
 
     <section id="projects" class="flex my-16 justify-center">
       <div class="flex flex-col justify-center items-center my-12">
-        <div class="bg-emerald-400 w-screen py-6 flex justify-center">
-          <h1 class="text-5xl text-white font-extrabold">Projects</h1>
-        </div>
 
+        <div class="bg-emerald-400 flex flex-col items-center gap-4 justify-center pt-6 w-screen">
+          <h1 class="text-5xl text-white font-extrabold">Projects</h1>
+          <p class="text-lg text-black font-bold text-center mb-4">
+            Explore the innovative projects I've crafted.
+          </p>
+        </div>
         <div class="flex gap-10 mt-10">
-          <div class="project flex-none rounded-lg bg-black my-6 top-2 left-20">
+          <div class="project flex-none rounded-lg bg-black my-6 top-2 left-2">
             <div
-              class="rounded-lg h-full w-full bg-emerald-400 border-2 border-black relative right-2 bottom-2 hover:-translate-x-1 hover:-translate-y-1 transition ease-in-out duration-300 flex flex-col justify-start items-center"
-            ></div>
+              class="rounded-lg h-full w-full bg-emerald-400 border-2 border-black relative right-2 bottom-2 hover:-translate-x-1 hover:-translate-y-1 transition ease-in-out duration-300 flex flex-col items-center px-4 py-4 hover:cursor-pointer"
+            >
+              <div class="overflow-hidden rounded-lg h-full w-full flex-1">
+                <img
+                  src="assets/traditional-zhongguo-colors.png"
+                  alt="project-pic1"
+                />
+              </div>
+              <p class="text-xl text-white font-semibold mt-4 text-center">
+                Traditional Zhongguo Colors
+              </p>
+            </div>
           </div>
           <div class="project flex-none rounded-lg bg-black my-6 top-2 left-2">
             <div
-              class="rounded-lg h-full w-full bg-emerald-400 border-2 border-black relative right-2 bottom-2 hover:-translate-x-1 hover:-translate-y-1 transition ease-in-out duration-300 flex flex-col justify-start items-center"
-            ></div>
+              class="rounded-lg h-full w-full bg-emerald-400 border-2 border-black relative right-2 bottom-2 hover:-translate-x-1 hover:-translate-y-1 transition ease-in-out duration-300 flex flex-col items-center px-4 py-4 hover:cursor-pointer"
+            >
+              <div class="overflow-hidden rounded-lg h-full w-fullflex-1">
+                <img src="assets/splash-and-spray.png" alt="project-pic1" />
+              </div>
+              <p class="text-xl text-white font-semibold mt-4 text-center">
+                Splash & Spray!
+              </p>
+            </div>
           </div>
         </div>
 
         <div class="flex gap-10">
           <div class="project flex-none rounded-lg bg-black my-6 top-2 left-20">
             <div
-              class="rounded-lg h-full w-full bg-emerald-400 border-2 border-black relative right-2 bottom-2 hover:-translate-x-1 hover:-translate-y-1 transition ease-in-out duration-300 flex flex-col justify-start items-center"
-            ></div>
+              class="rounded-lg h-full w-full bg-emerald-400 border-2 border-black relative right-2 bottom-2 hover:-translate-x-1 hover:-translate-y-1 transition ease-in-out duration-300 flex flex-col items-center px-4 py-4 hover:cursor-pointer"
+            >
+              <div class="overflow-hidden rounded-lg h-full w-fullflex-1">
+                <img src="assets/loong-or-dragon.png" alt="project-pic1" />
+              </div>
+              <p class="text-xl text-white font-semibold mt-4 text-center">
+                Loong or Dragon?
+              </p>
+            </div>
           </div>
           <div class="project flex-none rounded-lg bg-black my-6 top-2 left-2">
             <div
-              class="rounded-lg h-full w-full bg-emerald-400 border-2 border-black relative right-2 bottom-2 hover:-translate-x-1 hover:-translate-y-1 transition ease-in-out duration-300 flex flex-col justify-start items-center"
-            ></div>
+              class="rounded-lg h-full w-full bg-emerald-400 border-2 border-black relative right-2 bottom-2 hover:-translate-x-1 hover:-translate-y-1 transition ease-in-out duration-300 flex flex-col items-center px-4 py-4 hover:cursor-pointer"
+            >
+              <div class="overflow-hidden rounded-lg h-full w-fullflex-1">
+                <img src="assets/rebooted.png" alt="project-pic1" />
+              </div>
+              <p class="text-xl text-white font-semibold mt-4 text-center">
+                Rebooted
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -218,7 +281,6 @@
           enhaohao.tan@gmail.com
         </button>
       </div>
-      <a href="mailto:enhaohao.tan@gmail.com">Click here</a>
       <p class="text-lg font-bold my-3 text-amber-300">Or</p>
       <div class="flex gap-4 justify-center">
         <div
@@ -226,6 +288,8 @@
         >
           <div
             class="bg-amber-300 h-full w-full rounded-lg flex justify-center items-center relative right-1 bottom-1 hover:bg-purple-500 hover:text-white text-black transition ease-in-out hover:cursor-pointer duration-300"
+            onclick="location.href='https://www.linkedin.com/in/enhao-tan/'"
+            title="LinkedIn"
           >
             <i class="fa-brands fa-linkedin fa-2xs"></i>
           </div>
@@ -235,6 +299,8 @@
         >
           <div
             class="bg-amber-300 h-full w-full rounded-lg flex justify-center items-center relative right-1 bottom-1 hover:bg-purple-500 hover:text-white text-black transition ease-in-out hover:cursor-pointer duration-300"
+            onclick="location.href='https://www.youtube.com/@EnhaoTan'"
+            title="YouTube"
           >
             <i class="fa-brands fa-youtube fa-2xs"></i>
           </div>
@@ -244,6 +310,8 @@
         >
           <div
             class="bg-amber-300 h-full w-full rounded-lg flex justify-center items-center relative right-1 bottom-1 hover:bg-purple-500 hover:text-white text-black transition ease-in-out hover:cursor-pointer duration-300"
+            onclick="location.href='https://x.com/enhaohaotan'"
+            title="X"
           >
             <i class="fa-brands fa-x-twitter fa-2xs"></i>
           </div>
@@ -253,6 +321,8 @@
         >
           <div
             class="bg-amber-300 h-full w-full rounded-lg flex justify-center items-center relative right-1 bottom-1 hover:bg-purple-500 hover:text-white text-black transition ease-in-out hover:cursor-pointer duration-300"
+            onclick="location.href='https://www.facebook.com/profile.php?id=100095359869609'"
+            title="Facebook"
           >
             <i class="fa-brands fa-facebook fa-2xs"></i>
           </div>
@@ -262,6 +332,8 @@
         >
           <div
             class="bg-amber-300 h-full w-full rounded-lg flex justify-center items-center relative right-1 bottom-1 hover:bg-purple-500 hover:text-white text-black transition ease-in-out hover:cursor-pointer duration-300"
+            onclick="location.href='https://www.instagram.com/enhaohaotan/'"
+            title="Instagram"
           >
             <i class="fa-brands fa-instagram fa-2xs"></i>
           </div>
@@ -271,17 +343,9 @@
         >
           <div
             class="bg-amber-300 h-full w-full rounded-lg flex justify-center items-center relative right-1 bottom-1 hover:bg-purple-500 hover:text-white text-black transition ease-in-out hover:cursor-pointer duration-300"
+            title="QQ"
           >
-            <i class="fa-brands fa-tiktok fa-2xs"></i>
-          </div>
-        </div>
-        <div
-          class="icons flex justify-center h-20 w-20 rounded-lg bg-black relative left-1 top-1"
-        >
-          <div
-            class="bg-amber-300 h-full w-full rounded-lg flex justify-center items-center relative right-1 bottom-1 hover:bg-purple-500 hover:text-white text-black transition ease-in-out hover:cursor-pointer duration-300"
-          >
-            <i class="fa-brands fa-discord fa-2xs"></i>
+            <i class="fa-brands fa-qq fa-2xs"></i>
           </div>
         </div>
       </div>
@@ -291,6 +355,18 @@
         >
           <div
             class="bg-amber-300 h-full w-full rounded-lg flex justify-center items-center relative right-1 bottom-1 hover:bg-purple-500 hover:text-white text-black transition ease-in-out hover:cursor-pointer duration-300"
+            onclick="location.href='https://discord.gg/AymUS4Hn'"
+            title="Discord"
+          >
+            <i class="fa-brands fa-discord fa-2xs"></i>
+          </div>
+        </div>
+        <div
+          class="icons flex justify-center h-20 w-20 rounded-lg bg-black relative left-1 top-1"
+        >
+          <div
+            class="bg-amber-300 h-full w-full rounded-lg flex justify-center items-center relative right-1 bottom-1 hover:bg-purple-500 hover:text-white text-black transition ease-in-out hover:cursor-pointer duration-300"
+            title="WeChat"
           >
             <i class="fa-brands fa-weixin fa-2xs"></i>
           </div>
@@ -300,6 +376,8 @@
         >
           <div
             class="bg-amber-300 h-full w-full rounded-lg flex justify-center items-center relative right-1 bottom-1 hover:bg-purple-500 hover:text-white text-black transition ease-in-out hover:cursor-pointer duration-300"
+            onclick="location.href='https://github.com/enhaohaotan'"
+            title="Github"
           >
             <i class="fa-brands fa-github fa-2xs"></i>
           </div>
@@ -309,6 +387,8 @@
         >
           <div
             class="bg-amber-300 h-full w-full rounded-lg flex justify-center items-center relative right-1 bottom-1 hover:bg-purple-500 hover:text-white text-black transition ease-in-out hover:cursor-pointer duration-300"
+            onclick="location.href='https://open.spotify.com/user/31nugeowqq3fqiqlyw3krktqp3xe'"
+            title="Spotify"
           >
             <i class="fa-brands fa-spotify fa-2xs"></i>
           </div>
@@ -318,15 +398,8 @@
         >
           <div
             class="bg-amber-300 h-full w-full rounded-lg flex justify-center items-center relative right-1 bottom-1 hover:bg-purple-500 hover:text-white text-black transition ease-in-out hover:cursor-pointer duration-300"
-          >
-            <i class="fa-brands fa-facebook-messenger fa-2xs"></i>
-          </div>
-        </div>
-        <div
-          class="icons flex justify-center h-20 w-20 rounded-lg bg-black relative left-1 top-1"
-        >
-          <div
-            class="bg-amber-300 h-full w-full rounded-lg flex justify-center items-center relative right-1 bottom-1 hover:bg-purple-500 hover:text-white text-black transition ease-in-out hover:cursor-pointer duration-300"
+            onclick="location.href='https://steamcommunity.com/profiles/76561199045729559/'"
+            title="Steam"
           >
             <i class="fa-brands fa-steam fa-2xs"></i>
           </div>
@@ -336,15 +409,7 @@
         >
           <div
             class="bg-amber-300 h-full w-full rounded-lg flex justify-center items-center relative right-1 bottom-1 hover:bg-purple-500 hover:text-white text-black transition ease-in-out hover:cursor-pointer duration-300"
-          >
-            <i class="fa-brands fa-playstation fa-2xs"></i>
-          </div>
-        </div>
-        <div
-          class="icons flex justify-center h-20 w-20 rounded-lg bg-black relative left-1 top-1"
-        >
-          <div
-            class="bg-amber-300 h-full w-full rounded-lg flex justify-center items-center relative right-1 bottom-1 hover:bg-purple-500 hover:text-white text-black transition ease-in-out hover:cursor-pointer duration-300"
+            title="WhatsApp"
           >
             <i class="fa-brands fa-whatsapp fa-2xs"></i>
           </div>
@@ -352,7 +417,7 @@
       </div>
     </section>
     <footer class="flex flex-col justify-center items-center my-16">
-      <div class="flex flex-col justify-center items-center my-6 gap-2">
+      <div class="flex flex-col justify-center items-center my-12 gap-2">
         <h3 class="text-2xl text-black font-bold">
           On my profile card, I am a CS student.
         </h3>
@@ -363,12 +428,13 @@
           But in my heart, I am a gamer.
         </h3>
       </div>
-      <div class="flex justify-center items-center gap-6">
+      <div class="flex justify-center items-center gap-6 mt-4">
         <div
           class="rounded-full h-14 w-14 bg-white relative box-content border border-black"
         >
           <div
-            class="rounded-full h-14 w-14 bg-amber-300 relative right-1 bottom-1 flex justify-center items-center box-content border border-black"
+            class="rounded-full h-14 w-14 bg-amber-300 relative right-1 bottom-1 flex justify-center items-center box-content border border-black hover:cursor-pointer"
+            onclick="location.href='#'"
           >
             <p class="text-zinc-900 text-3xl font-bold">浩</p>
           </div>

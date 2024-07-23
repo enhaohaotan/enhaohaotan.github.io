@@ -17,6 +17,11 @@ body {
   height: 48vmin;
 }
 
+.avatar-img {
+  width: 30vmin;
+  height: 35vmin;
+}
+
 .avatar-about {
   width: 30vmin;
   height: 40vmin;
